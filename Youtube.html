@@ -1,0 +1,33 @@
+<!-- Youtube.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Videos</title>
+    <script>
+        const API_KEY = "AIzaSyCTFIvgvXupiJbB9VzdTnuM3o85_B0zuio";
+        const CHANNEL_ID = "YOUR_CHANNEL_ID_HERE";
+        const VIDEO_COUNT = 10;
+
+        async function fetchVideos() {
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${VIDEO_COUNT}`);
+            const data = await response.json();
+            const videoContainer = document.getElementById("videos");
+
+            data.items.forEach(item => {
+                const videoId = item.id.videoId;
+                const title = item.snippet.title;
+                const iframe = `<iframe width="100%" height="200" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+                videoContainer.innerHTML += `<div>${iframe}<p>${title}</p></div>`;
+            });
+        }
+
+        window.onload = fetchVideos;
+    </script>
+</head>
+<body>
+    <h1>Latest YouTube Videos</h1>
+    <div id="videos"></div>
+</body>
+</html>
