@@ -20,6 +20,19 @@
             height: 315px;
             border: none;
         }
+        .back-btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 12px 25px;
+            background: #6200ea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #3700b3;
+        }
     </style>
     <script>
         // List of video URLs
@@ -54,6 +67,10 @@
 </head>
 <body>
     <h1>Latest YouTube Videos</h1>
+    
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-btn">Back to Home</a>
+
     <div id="videos"></div>
 </body>
 </html>
