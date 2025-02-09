@@ -1,10 +1,10 @@
-<!-- index.html -->
+<!-- shop.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealScripts_q</title>
+    <title>Shop - RealScripts_q</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -14,46 +14,92 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        .background {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: url('https://source.unsplash.com/1600x900/?space,stars') no-repeat center center/cover;
-            z-index: -1;
+        .shop-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
         }
-        .content {
-            position: relative;
-            z-index: 1;
+        .shop-item {
             padding: 20px;
+            border: 2px solid #6200ea;
+            border-radius: 10px;
+            background: #1f1f1f;
+            width: 90%;
+            max-width: 350px;
+            margin: auto;
         }
-        .buttons .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 25px;
+        .btn {
+            display: block;
+            margin: 5px auto;
+            padding: 10px 15px;
             background: #6200ea;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 5px;
             transition: background 0.3s;
-            cursor: pointer;
-            font-size: 16px;
+            width: 80%;
         }
-        .buttons .btn:hover {
+        .btn:hover {
             background: #3700b3;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #ff1744;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #d50000;
         }
     </style>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="content">
-        <h1>Welcome to RealScripts_q!</h1>
-        <div class="buttons">
-            <a href="https://www.roblox.com/users/7938368224/profile" target="_blank" class="btn">Follow on Roblox</a>
-            <a href="https://www.youtube.com/@RealScripts_q" target="_blank" class="btn">Subscribe on YouTube</a>
-            <a href="https://discord.gg/uQ2gqY8mAA" target="_blank" class="btn">Script in Discord</a>
-            <a href="Shop.html" class="btn">Shop</a>
-            <a href="Youtube.html" class="btn">YouTube Vids</a>
+    <h1>Shop</h1>
+    <div class="shop-section">
+        <div class="shop-item">
+            <h2>Robux Gift Cards</h2>
+            <p>Select Amount:</p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=50%20Robux&amount=0.65&currency_code=USD" class="btn">50 Robux - $0.65</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=100%20Robux&amount=1.29&currency_code=USD" class="btn">100 Robux - $1.29</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=250%20Robux&amount=3.25&currency_code=USD" class="btn">250 Robux - $3.25</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=500%20Robux&amount=6.50&currency_code=USD" class="btn">500 Robux - $6.50</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=1000%20Robux&amount=12.99&currency_code=USD" class="btn">1000 Robux - $12.99</a>
+        </div>
+
+        <div class="shop-item">
+            <h2>Fortnite V-Bucks</h2>
+            <p>Select Amount:</p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=50%20V-Bucks&amount=0.99&currency_code=USD" class="btn">50 V-Bucks - $0.99</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=100%20V-Bucks&amount=1.99&currency_code=USD" class="btn">100 V-Bucks - $1.99</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=250%20V-Bucks&amount=4.99&currency_code=USD" class="btn">250 V-Bucks - $4.99</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=500%20V-Bucks&amount=9.99&currency_code=USD" class="btn">500 V-Bucks - $9.99</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=1000%20V-Bucks&amount=19.99&currency_code=USD" class="btn">1000 V-Bucks - $19.99</a>
+        </div>
+
+        <div class="shop-item">
+            <h2>Discord Nitro</h2>
+            <p>Subscription - £6 per week</p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=realgyjs%40gmail.com&item_name=Discord%20Nitro%20Subscription&amount=6.00&currency_code=GBP&a3=6.00&p3=1&t3=W&src=1" class="btn">Subscribe Weekly</a>
+            <p>OR</p>
+            <p>Full Payment - £42</p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=realgyjs%40gmail.com&item_name=Discord%20Nitro%20Full%20Year&amount=42.00&currency_code=GBP" class="btn">Buy Full Year</a>
+        </div>
+
+        <div class="shop-item">
+            <h2>Dusty Script Paid</h2>
+            <p>Subscription - $1.00/month</p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=realgyjs%40gmail.com&item_name=Dusty%20Script%20Paid&amount=1.00&currency_code=USD&a3=1.00&p3=1&t3=M&src=1" class="btn">Subscribe Now</a>
         </div>
     </div>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-btn">Back to Home</a>
+
 </body>
 </html>
