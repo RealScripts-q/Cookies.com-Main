@@ -27,9 +27,9 @@
         }
         .buttons {
             display: flex;
-            justify-content: flex-end; /* Align to the right */
-            gap: 10px; /* Add spacing between buttons */
-            flex-wrap: wrap; /* Ensure it wraps if the screen is too small */
+            justify-content: flex-end;
+            gap: 10px;
+            flex-wrap: wrap;
             padding: 10px;
         }
         .buttons .btn {
@@ -41,13 +41,11 @@
             transition: background 0.3s;
             cursor: pointer;
             font-size: 16px;
-            white-space: nowrap; /* Prevents buttons from breaking into multiple lines */
+            white-space: nowrap;
         }
         .buttons .btn:hover {
             background: #3700b3;
         }
-
-        /* Tip Section */
         .tip-message {
             margin-top: 20px;
             font-size: 18px;
@@ -57,8 +55,6 @@
             border-radius: 8px;
             display: inline-block;
         }
-
-        /* Optional Tip (Roblox Follow) */
         .optional-tip {
             margin-top: 10px;
             font-size: 16px;
@@ -68,11 +64,9 @@
             border-radius: 8px;
             display: inline-block;
         }
-
-        /* Responsive for small screens */
         @media (max-width: 600px) {
             .buttons {
-                justify-content: center; /* Center the buttons if the screen is too small */
+                justify-content: center;
             }
         }
     </style>
@@ -87,12 +81,9 @@
             <a href="https://discord.gg/uQ2gqY8mAA" target="_blank" class="btn">Script in Discord</a>
             <a href="Shop.html" class="btn">Shop</a>
             <a href="Youtube.html" class="btn">YouTube Vids</a>
+            <a href="shirts.html" class="btn">View My Merch</a>
         </div>
-
-        <!-- Tip Message -->
         <p class="tip-message">Some scripts are paid. Go to the <a href="Shop.html" style="color: #ffcc00;">Shop</a> to buy them. Some scripts are free in the <a href="https://discord.gg/uQ2gqY8mAA" target="_blank" style="color: #ffcc00;">Discord</a>!</p>
-
-        <!-- Optional Roblox Follow Tip -->
         <p class="optional-tip">Optional: Follow me on <a href="https://www.roblox.com/users/7938368224/profile" target="_blank" style="color: #00e676;">Roblox</a> to stay updated!</p>
     </div>
 </body>
